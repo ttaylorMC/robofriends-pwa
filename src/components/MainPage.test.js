@@ -1,5 +1,4 @@
 import { shallow } from "enzyme";
-import React from "react";
 import MainPage from "./MainPage";
 
 let wrapper;
@@ -14,11 +13,11 @@ beforeEach(() => {
   wrapper = shallow(<MainPage {...mockProps} />);
 });
 
-it("renders MainPage without crashing", () => {
+it("renders Mainpage without crashing", () => {
   expect(wrapper).toMatchSnapshot();
 });
 
-it("filters robots correctly", () => {
+it("fitlers robots correctly", () => {
   const mockProps2 = {
     onRequestRobots: jest.fn(),
     robots: [
@@ -28,7 +27,7 @@ it("filters robots correctly", () => {
         email: "john@gmail.com",
       },
     ],
-    searchfield: "john",
+    searchField: "john",
     isPending: false,
   };
   const wrapper2 = shallow(<MainPage {...mockProps2} />);
