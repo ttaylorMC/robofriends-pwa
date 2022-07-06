@@ -15,19 +15,3 @@ exports[`renders MainPage without crashing 1`] = `
   </Scroll>
 </div>
 `;
-
-exports[`renders Mainpage without crashing 1`] = `
-<div
-  className="tc"
->
-  <Header />
-  <SearchBox />
-  <Scroll>
-    <ErrorBoundary>
-      <CardList
-        robots={[Function]}
-      />
-    </ErrorBoundary>
-  </Scroll>
-</div>
-`;
